@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Nirali Education</title>
+    <link rel="stylesheet" href="{% static 'css/get_started.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Nirali Education</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/courses/">Courses</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/get-started/">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="get-started">
+        <h2>Get Started with Nirali Education</h2>
+        <p>Create your free account and start learning today!</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 EduLearn. All rights reserved.</p>
+    </footer>
+</body>
+</html>

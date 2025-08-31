@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+}
+
+/* Header */
+header {
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav h1 {
+    display: inline;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Get Started Section */
+.get-started {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.get-started h2 {
+    font-size: 2.2rem;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.get-started p {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn {
+    background: #004080;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #002850;
+}
+
+/* Footer */
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
